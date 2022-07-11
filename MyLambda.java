@@ -70,6 +70,7 @@ public class MyLambda {
             output.add(insert);
         }
 
+        // Formatting to be dead ringer as reference
         String formattedString = output.toString()
                 .replace("=", "")
                 .replace(", ", ", \n")
@@ -77,7 +78,6 @@ public class MyLambda {
                 .replace("}", "}\n")
                 .trim();
         Stream<Object> newOutput = output.stream().map(a -> a.entrySet() + "\n");
-        // formattedString = newOutput.toString().replace("=", "").trim();
         System.out.println(formattedString);
     }
 
