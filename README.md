@@ -24,7 +24,7 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
 ##Explanation of methods and functionalities
 
-#public void checker(int[] numbers) {...
+# public void checker(int[] numbers) {...
 
     This method receives an array of integer values on which to evaluate them for the different functions described above.
     
