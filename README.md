@@ -30,6 +30,12 @@ This exercise will be based on developing 3 lambda functions that exist within a
     
     To fit the requested output format, we need to create a list with the selected value and its results. 
     LinkedHashMap is a Java collections that let us keep the same order as we receive the data and build the output format.
+    A forEach will iterate through the array. This will create another collection as LinkedHashMap<String, Object> to keep
+    name of method and its results. Taking care if number is 0, keeping into the map the message "NOT A POSSIBLE OPTION".
     
-First of all we are going to use a functional interface to get the boolean returns of any action to do over the number selected. It's recommended that all functional interfaces have an informative @FunctionalInterface annotation. This clearly communicates the purpose of the interface, and also allows a compiler to generate an error 
-if the annotated interface does not satisfy the conditions.
+## interface InterfaceForBooleans {...
+
+For walk through the methods, first of all we are going to use a functional interface to get the boolean returns of any 
+action to do over the number selected. It's recommended that all functional interfaces have an informative 
+@FunctionalInterface annotation. This clearly communicates the purpose of the interface, and also allows a compiler 
+to generate an error if the annotated interface does not satisfy the conditions.
