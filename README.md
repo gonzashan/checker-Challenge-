@@ -58,10 +58,13 @@ This exercise will be based on developing 3 lambda functions that exist within a
     
 ### interface InterfaceForBooleans {...
 
-For walk through the methods, first of all we are going to use a functional interface to get the boolean returns of any 
-action to do over the number selected. It's recommended that all functional interfaces have an informative 
+For walk through the methods, first of all we are going to use a functional interface to get an int value and returns a boolean,
+depending on what action has been called. It's recommended that all functional interfaces have an informative 
 @FunctionalInterface annotation. This clearly communicates the purpose of the interface, and also allows a compiler 
 to generate an error if the annotated interface does not satisfy the conditions.
 
 
-### Working...
+### How is it works? 
+
+Simple. From the Main class create a new object from class MyLambda, and passing the int array numbers invoking the method checker()
+as below.
