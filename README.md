@@ -21,7 +21,15 @@ This exercise will be based on developing 3 lambda functions that exist within a
      In case the past input is <= 0 it must always return false.
 
      checker input | output:
-     
-<head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eos-icons/dist/css/eos-icons.css" />
-    </head>
+
+#Explanation of methods and functionalities
+
+## public void checker(int[] numbers) {...
+
+    This method receives an array of integer values on which to evaluate them for the different functions described above.
+    
+    To fit the requested output format, we need to create a list with the selected value and its results. 
+    ###LinkedHashMap is a Java collections that let us keep the same order as we receive the data and build the output format.
+    
+First of all we are going to use a functional interface to get the boolean returns of any action to do over the number selected. It's recommended that all functional interfaces have an informative @FunctionalInterface annotation. This clearly communicates the purpose of the interface, and also allows a compiler to generate an error 
+if the annotated interface does not satisfy the conditions.
