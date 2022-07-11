@@ -10,3 +10,12 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
     checker: method of the class that allows us to use (isOdd, isPalindrome, isPrime) when passing an array of numbers 
     to review and must return a list of numbers and whether it is Even or Odd, Primo and / or Palindrome.
+    
+    
+  #Data entry
+
+     Each function has as input the number to be checked and returns only true or false.
+
+     In case the past input is <= 0 it must always return false.
+
+     checker input | output:
