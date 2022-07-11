@@ -72,3 +72,8 @@ checker() as below:
         int[] numbers = new int[]{4,0,898,34};
         MyLambda ob = new MyLambda();
         ob.checker(numbers);
+        
+        
+ *I do apologize for the inconvenience the previous incorrect grammar may have caused.
+ 
+ Cheers, Gonzalo SM
