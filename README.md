@@ -22,9 +22,9 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
      checker input | output:
 
-#Explanation of methods and functionalities
+##Explanation of methods and functionalities
 
-### public void checker(int[] numbers) {...
+#public void checker(int[] numbers) {...
 
     This method receives an array of integer values on which to evaluate them for the different functions described above.
     
@@ -33,7 +33,7 @@ This exercise will be based on developing 3 lambda functions that exist within a
     A forEach will iterate through the array. This will create another collection as LinkedHashMap<String, Object> to keep
     name of method and its results. Taking care if number is 0, keeping into the map the message "NOT A POSSIBLE OPTION".
     
-## interface InterfaceForBooleans {...
+# interface InterfaceForBooleans {...
 
 For walk through the methods, first of all we are going to use a functional interface to get the boolean returns of any 
 action to do over the number selected. It's recommended that all functional interfaces have an informative 
