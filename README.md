@@ -68,7 +68,7 @@ to generate an error if the annotated interface does not satisfy the conditions.
 
 Simple. From the Main class create a new object of class MyLambda, and passing the integers array numbers invoking the method 
 checker() as below:
-    '''
+    
         int[] numbers = new int[]{4,0,898,34};
         MyLambda ob = new MyLambda();
         ob.checker(numbers);
