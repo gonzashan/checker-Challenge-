@@ -14,7 +14,7 @@ This exercise will be based on developing 3 lambda functions that exist within a
     to review and must return a list of numbers and whether it is Even or Odd, Primo and / or Palindrome.
     
     
-  #Data entry
+  # Data entry
 
      Each function has as input the number to be checked and returns only true or false.
 
@@ -22,7 +22,7 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
      checker input | output:
 
-##Explanation of methods and functionalities
+## Explanation of methods and functionalities
 
 # public void checker(int[] numbers) {...
 
