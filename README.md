@@ -20,12 +20,11 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
      In case the past input is <= 0 it must always return false.
 
-     checker input | output:[
+     input: [0,5,898,34]
+     checker output:[
           {
-            input:4,
-            isOdd:true,
-            isPrime:false,
-            isPalindrome:true,
+            input:0,
+            "NOT A POSSIBLE OPTION",
            },
            {
             input:5,
