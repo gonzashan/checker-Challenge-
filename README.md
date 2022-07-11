@@ -21,4 +21,6 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
      checker input | output:
      
+<head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eos-icons/dist/css/eos-icons.css" />
+    </head>
