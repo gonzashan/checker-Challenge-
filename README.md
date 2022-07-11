@@ -1,5 +1,5 @@
 # Repte #2 - Welcome to Lambdas ƛ
-<img align="left" alt="Java" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png" />
+<img align="left" alt="Java" width="30px" src="https://forkpoint.com/wp-content/uploads/java-logo-transparent.png" />
 
 This exercise will be based on developing 3 lambda functions that exist within a class called MyLambda and that allows us to find the following:
 
