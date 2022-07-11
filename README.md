@@ -21,4 +21,4 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
      checker input | output:
      
-     [<img align="left" alt="medium" src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />][blog]
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eos-icons/dist/css/eos-icons.css" />
