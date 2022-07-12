@@ -47,14 +47,22 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
 ## Explanation of methods and functionalities
 
+### class Results  (optimizing memory resources)
+
+    Using this simple class, with the same variables as challenge request and its constructor, will get the results from methods. 
+  
+
 ### public void checker(int[] numbers) {...
 
    This method receives an array of integer values on which to evaluate them for the different functions described above.
     
-   To fit the requested output format, we need to create a list with the selected value and its results. 
-   LinkedHashMap is a Java collections that let us keep the same order as we receive the data and build the output format.
-   A forEach will iterate through the array. This will create another collection as LinkedHashMap<String, Object> to keep
-   name of method and its results. Taking care if number is 0, keeping into the map the message "NOT A POSSIBLE OPTION".
+   To storing the requested output, we need to create an ArrayList. A 'forEach' will iterate through the array. 
+   It will creates a new objects from the class Results, declared on top, to keep the results from methods 
+   isOdd, isPrime and isPalindrome. 
+   
+   Taking care if number is 0, we initialize a new object for class Results, keeping the number zero and passing 'false' the 
+   rest of elements in the constructor. Overriding toString from class Results we'll get formatting requested and with 
+   an 'if' condition the message "NOT A POSSIBLE OPTION" will be possible.
     
 ### interface InterfaceForBooleans {...
 
@@ -74,6 +82,6 @@ checker() as below:
         ob.checker(numbers);
         
         
- *I do apologize for the inconvenience the previous incorrect grammar may have caused.
+ * I do apologize for the inconvenience the previous incorrect grammar may have caused and my delay.
  
  Cheers, Gonzalo SM
