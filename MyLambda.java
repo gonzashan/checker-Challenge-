@@ -1,16 +1,43 @@
 package my_lambda;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.stream.Stream;
 
 public class MyLambda {
+
+    class Result {
+
+        private int number;
+        private boolean odd, prime, palindrome;
+
+        public Result(int number, boolean odd, boolean prime, boolean palindrome) {
+            this.number = number;
+            this.odd = odd;
+            this.prime = prime;
+            this.palindrome = palindrome;
+        }
+
+        @Override
+        public String toString() {
+            if (number == 0) {
+                return "\n{\n" +
+                        "\tnumber:" + number + ",\n" +
+                        "\tIS NOT POSSIBLE\n}";
+            } else {
+                return  "\n{\n\tnumber:" + number  +
+                        ",\n\tisOdd:" + odd +
+                        ",\n\tisPrime:" + prime +
+                        ",\n\tisPalindrome:" + palindrome +
+                        "\n}";
+            }
+        }
+    }
+
 
     @FunctionalInterface
     interface InterfaceForBooleans {
         boolean check(int a);
     }
+
     // Function to check if number is odd but 'Upside Down' ->
     // for further information, watch Strangers Things, the tv show.
     public static InterfaceForBooleans isOdd() {
@@ -19,6 +46,7 @@ public class MyLambda {
             return (a % 2 == 0);
         };
     }
+
     // Function to check if number is prime
     public static InterfaceForBooleans isPrime() {
         return (a) -> {
@@ -50,35 +78,22 @@ public class MyLambda {
 
     public void checker(int[] numbers) {
 
-        // LinkedHashMap has been chosen to guarantee the right order of insert
-        // from the array numbers.
-        List<LinkedHashMap<String, Object>> output = new ArrayList<>();
+        ArrayList<Object> output = new ArrayList<>();
 
         for (int number : numbers) {
-            LinkedHashMap<String, Object> insert = new LinkedHashMap<String, Object>();
 
-            if(number == 0){
-                insert.put("input:", number);
-                insert.put("NOT A POSSIBLE OPTION", "");
+            if (number == 0) {
+                output.add(new Result (number, false,false,false));
 
             } else {
-                insert.put("input:", number);
-                insert.put("isOdd:", isOdd().check(number));
-                insert.put("isPrime:", isPrime().check(number));
-                insert.put("isPalindrome:", isPalindrome().check(number));
+
+                output.add(new Result (number, isOdd().check(number)
+                        ,isPrime().check(number),isPalindrome().check(number)));
             }
-            output.add(insert);
         }
 
         // Formatting to be dead ringer as reference
-        String formattedString = output.toString()
-                .replace("=", "")
-                .replace(", ", ", \n")
-                .replace("{", "{\n")
-                .replace("}", "}\n")
-                .trim();
-        Stream<Object> newOutput = output.stream().map(a -> a.entrySet() + "\n");
-        System.out.println(formattedString);
+        System.out.println(output);
     }
 
 }
