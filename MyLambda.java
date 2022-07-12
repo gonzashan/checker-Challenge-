@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class MyLambda {
 
+    // Create a class inside with variables to get values from the method checker results.
+    // The new instance has a constructor with all variables.
     class Result {
 
         private int number;
@@ -21,7 +23,7 @@ public class MyLambda {
             if (number == 0) {
                 return "\n{\n" +
                         "\tnumber:" + number + ",\n" +
-                        "\tIS NOT POSSIBLE\n}";
+                        "\tNOT A POSSIBLE OPTION\n}";
             } else {
                 return  "\n{\n\tnumber:" + number  +
                         ",\n\tisOdd:" + odd +
@@ -32,7 +34,7 @@ public class MyLambda {
         }
     }
 
-
+    //
     @FunctionalInterface
     interface InterfaceForBooleans {
         boolean check(int a);
@@ -78,7 +80,8 @@ public class MyLambda {
 
     public void checker(int[] numbers) {
 
-        ArrayList<Object> output = new ArrayList<>();
+        // Get results inside an ArrayList
+        ArrayList<Result> output = new ArrayList<>();
 
         for (int number : numbers) {
 
