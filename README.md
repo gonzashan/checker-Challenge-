@@ -49,7 +49,8 @@ This exercise will be based on developing 3 lambda functions that exist within a
 
 ### class Results  (optimizing memory resources)
 
-    Using this simple class, with the same variables as challenge request and its constructor, will get the results from methods. 
+    Using this simple class, with the same variables as challenge request and its constructor, will 
+    get the results from methods. 
   
 
 ### public void checker(int[] numbers) {...
