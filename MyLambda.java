@@ -78,7 +78,7 @@ public class MyLambda {
     }
 
 
-    public void checker(int[] numbers) {
+    public ArrayList<Result> checker(int[] numbers) {
 
         // Get results inside an ArrayList
         ArrayList<Result> output = new ArrayList<>();
@@ -96,7 +96,7 @@ public class MyLambda {
         }
 
         // Formatting to be dead ringer as reference
-        System.out.println(output);
+        return output;
     }
 
 }
